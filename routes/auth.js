@@ -12,11 +12,27 @@ const {
   validationLoggin,
 } = require('../helpers/middlewares');
 
-//  GET    '/me'
-router.get('/me', isLoggedIn, (req, res, next) => {
+//  GET    '/profile'
+router.get('/profile', isLoggedIn, (req, res, next) => {
   req.session.currentUser.password = '*';
   res.json(req.session.currentUser);
 });
+
+// POST '/profile/edit
+router.put('/profile/:id/edit', async (req, res, next) => {
+  const  userId = req.session.currentUser.id
+
+  const { username, password } = req.body;
+
+try {
+  const updatedProfile = await User.findByIdAndUpdate( userId , { username, password }, { new: true })
+  res.status(200).json(updatedProfile);
+} catch (err) {
+  next(err)
+}
+})
+
+
 
 //  POST    '/signup'
 router.post(
@@ -80,8 +96,8 @@ router.post('/logout', isLoggedIn, (req, res, next) => {
   return;
 });
 
-//  GET    '/private'   --> Only for testing - Same as /me but it returns a message instead
-router.get('/private', isLoggedIn, (req, res, next) => {
+//  GET    '/mysigns'   --> Only for testing - Same as /profile but it returns a message instead
+router.get('/mysigns', isLoggedIn, (req, res, next) => {
   res
     .status(200) // OK
     .json({ message: 'Test - User is logged in' });

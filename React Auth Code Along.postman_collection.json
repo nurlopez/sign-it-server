@@ -99,7 +99,7 @@
 			"response": []
 		},
 		{
-			"name": "/auth/me",
+			"name": "/auth/profile",
 			"request": {
 				"method": "GET",
 				"header": [

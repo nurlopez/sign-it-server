@@ -7,9 +7,12 @@ const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const cors = require('cors');
+
+
 require('dotenv').config();
 
-const auth = require('./routes/auth');
+// npm i
+const router = require('./routes/index')
 
 
 // MONGOOSE CONNECTION
@@ -67,7 +70,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // ROUTER MIDDLEWARE
-app.use('/auth', auth);
+
+app.use('/', router);
 
 
 // ERROR HANDLING
