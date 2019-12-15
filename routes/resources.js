@@ -18,20 +18,29 @@ router.get('/', (req, res, next) => {
   })
   
   
-  // / GET '/:id'   => to retrieve a specific id
-router.get('/:id', (req, res, next) => {
+  // / GET '/:Id'   => to retrieve a specific signcard
+router.get('/:Id', (req, res, next) => {
 
+    //we have to deconstruct from the params. 
+    const { Id } = req.params;
+console.log('ups!',req.params)
+    // if ( !mongoose.Types.ObjectId.isValid(signCardId)) {
+    //     res.status(500).json({ message: 'Specified signCardId is invalid' });
+    //     return;
+    //   } 
+
+    Resources.findById( Id )
+        .then (foundResource => {
+            res.status(200).json(foundResource);
+        })
+        .catch(err=> {
+            res.status(400).json(err);
+        })
+    })
+
+  // GET /resources/category  
   
-    const resourceId = req.params.id
-    console.log('testing' >> req.params)
-
-    Resources.findById( resourceId ) 
-    .then((signFound) => {
-      res.json(signFound);
-    })
-    .catch(err => {
-      res.json(err);
-    })
-})
+  // router.get('/:category', (req, res, next) => {
+  // });
   
   module.exports = router;
