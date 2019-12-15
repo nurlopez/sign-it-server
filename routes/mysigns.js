@@ -4,12 +4,17 @@ const router = express.Router();
 const createError = require('http-errors');
 // const User = require('../models/user');
 const MySigns = require('../models/mysigns')
+const User = require('../models/user')
 
-
-
+const {
+  isLoggedIn,
+  isNotLoggedIn,
+  validationLoggin,
+} = require('../helpers/middlewares');
 //  POST    '/create-sign'
 router.post(
-  '/create-sign', (req, res, next) => {
+  '/create-sign', isLoggedIn, (req, res, next) => {
+      console.log('hola2', req.session.currentUser);
       
     const createdMySign = new MySigns({
         imgURL: req.body.imgURL,
@@ -20,7 +25,7 @@ router.post(
     
       createdMySign.save()
             .then( (sign) => {
-          // User.update({_id: req.session.currentUser._id},
+          // User.update({_id: author},
           //   {
           //     $addToSet: {mySigns: sign},
           //   })

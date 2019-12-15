@@ -17,4 +17,11 @@ router.get('/', (req, res, next) => {
       })
   })
   
+  
+  
+  // GET /resources/category  
+  
+  // router.get('/:category', (req, res, next) => {
+  // });
+  
   module.exports = router;
