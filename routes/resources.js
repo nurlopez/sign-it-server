@@ -18,10 +18,20 @@ router.get('/', (req, res, next) => {
   })
   
   
+  // / GET '/:id'   => to retrieve a specific id
+router.get('/:id', (req, res, next) => {
+
   
-  // GET /resources/category  
-  
-  // router.get('/:category', (req, res, next) => {
-  // });
+    const resourceId = req.params.id
+    console.log('testing' >> req.params)
+
+    Resources.findById( resourceId ) 
+    .then((signFound) => {
+      res.json(signFound);
+    })
+    .catch(err => {
+      res.json(err);
+    })
+})
   
   module.exports = router;
