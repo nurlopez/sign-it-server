@@ -8,22 +8,30 @@ const resourcesSigns = [
 
     {
         category: 'letters', 
-        imgURL: 'link to image', // check this cloudinary
+        imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576494078/resources-letters/A.png', // check this cloudinary
         meaning: 'A',
-        pictoURL: 'link to picto API'
+        pictoURL: ''
     },
     {
         category: 'letters', 
-        imgURL: 'link to image', // check this cloudinary
+        imgURL: 'lhttps://res.cloudinary.com/dv6jvxllp/image/upload/v1576494078/resources-letters/B.png', // check this cloudinary
         meaning: 'B',
-        pictoURL: 'link to picto API'
+        pictoURL: ''
     },
     {
         category: 'letters', 
-        imgURL: 'link to image', // check this cloudinary
+        imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576494078/resources-letters/C.png', // check this cloudinary
         meaning: 'C',
-        pictoURL: 'link to picto API'
-    }
+        pictoURL: ''
+    },
+
+    {
+      category: 'letters', 
+      imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576494078/resources-letters/D.png', // check this cloudinary
+      meaning: 'D',
+      pictoURL: ''
+  }
+
 
 ]
 
