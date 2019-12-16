@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 // mongoose.connect('mongodb://localhost/mongoose-movies-development');
-
+require('dotenv').config();
 const Resources = require('../models/resources');
 // require the Picto API
 
@@ -14,7 +14,7 @@ const resourcesSigns = [
     },
     {
         category: 'letters', 
-        imgURL: 'lhttps://res.cloudinary.com/dv6jvxllp/image/upload/v1576494078/resources-letters/B.png', // check this cloudinary
+        imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576494078/resources-letters/B.png', // check this cloudinary
         meaning: 'B',
         pictoURL: ''
     },

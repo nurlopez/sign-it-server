@@ -7,7 +7,7 @@ const Resources = require('../models/resources');
 
 // GET /resources  
 
-router.get('/', (req, res, next) => {
+router.get('/categories/:category', (req, res, next) => {
   Resources.find() 
       .then(data => {
         res.json(data);
@@ -18,7 +18,7 @@ router.get('/', (req, res, next) => {
   })
   
   
-  // / GET '/:Id'   => to retrieve a specific signcard
+// / GET '/:Id'   => to retrieve a specific signcard
 // router.get('/:Id', (req, res, next) => {
 
 //     //we have to deconstruct from the params. 
