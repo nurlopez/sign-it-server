@@ -2,7 +2,7 @@ const express = require('express');
 var router = express.Router();
 
 
-const Resources = require('../models/resources');
+const Resources = require('../models/Resources');
 
 
 // GET /resources  

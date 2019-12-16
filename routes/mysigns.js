@@ -3,8 +3,8 @@ const router = express.Router();
 
 const createError = require('http-errors');
 // const User = require('../models/user');
-const MySigns = require('../models/mysigns')
-const User = require('../models/user')
+const MySigns = require('../models/Mysigns')
+const User = require('../models/User')
 
 const {
   isLoggedIn,
