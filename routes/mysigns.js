@@ -11,54 +11,53 @@ const {
   isNotLoggedIn,
   validationLoggin,
 } = require('../helpers/middlewares');
+
+
 //  POST    '/create-sign'
 router.post(
-  '/create-sign', isLoggedIn, (req, res, next) => {
+  '/create-sign', isLoggedIn, async (req, res, next) => {
       console.log('hola2', req.session.currentUser);
       
-    const createdMySign = new MySigns({
+    const newMySign = {
         imgURL: req.body.imgURL,
         meaning: req.body.meaning,
         pictoURL: req.body.pictoURL,
         author: req.session.currentUser._id
-      });
+      };
     
-      createdMySign.save()
-            .then( (sign) => {
-          // User.update({_id: author},
-          //   {
-          //     $addToSet: {mySigns: sign},
-          //   })
-            res.json(sign)
-        } )
-        .catch( (err) => console.log(err)); 
-        
+      
+      try {
+        const sign = await MySigns.create(newMySign)
+        // console.log('added sign', sign)
+        res.status(200).json(sign)
+      } catch (error) {
+        next (error)
+      }
     });  
 
 //  POST    '/view'
-router.get('/', (req, res, next) => {
-  MySigns.find() 
-      .then(sign => {
-        res.json(sign);
-      })
-      .catch(err => {
-        res.json(err);
-      })
+router.get('/', async (req, res, next) => {
+  
+  try {
+    const allSigns = await MySigns.find() 
+    res.status(200).json(allSigns)
+  } catch (error) {
+    next (error)
+  }
+
   })
     
 
 //  GET '/:id'
-router.get('/:id', (req, res, next) => {
-
-    const  mySignId = req.params.id
-
-    MySigns.findById(mySignId ) 
-      .then((signFound) => {
-        res.json(signFound);
-      })
-      .catch(err => {
-        res.json(err);
-      })
+router.get('/:id', async (req, res, next) => {
+  const  mySignId = req.params.id
+    
+  try {
+      const signFound = await MySigns.findById(mySignId ) 
+      res.status(200).json(signFound)
+  } catch (error) {
+    next (error)
+  }
   })
     
 
