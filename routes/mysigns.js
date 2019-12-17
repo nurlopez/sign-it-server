@@ -6,6 +6,8 @@ const createError = require('http-errors');
 const MySigns = require('../models/Mysigns')
 const User = require('../models/User')
 
+const parser = require('../config/cloudinary');
+
 const {
   isLoggedIn,
   isNotLoggedIn,
@@ -16,10 +18,10 @@ const {
 //  POST    '/create-sign'
 router.post(
   '/create-sign', isLoggedIn, async (req, res, next) => {
-      console.log('hola2', req.session.currentUser);
+      console.log('create-sign issue', req.body);
       
     const newMySign = {
-        imgURL: req.body.imgURL,
+        imgURL: req.body.imageURL,
         meaning: req.body.meaning,
         pictoURL: req.body.pictoURL,
         author: req.session.currentUser._id
@@ -75,6 +77,18 @@ router.get('/:id', async (req, res, next) => {
     next(err)
   }
 })
+
+
+// //image upload
+router.post('/create-sign/image', parser.single('photo'), (req, res, next) => {
+  console.log('img upload');
+  if (!req.file) {
+    next(new Error('No file uploaded!'));
+  };
+  const imageUrl = req.file.secure_url;
+  res.json(imageUrl).status(200);
+});
+
 
  // DELETE '/:id/remove
 
