@@ -8,206 +8,207 @@ const resourcesSigns = [
 
     {
         category: 'letters', 
-        imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/A.png', // check this cloudinary
+        imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/A.png', 
         meaning: 'A',
         pictoURL: ''
     },
     {
         category: 'letters', 
-        imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576494078/resources-letters/B.png', // check this cloudinary
+        imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576494078/resources-letters/B.png', 
         meaning: 'B',
         pictoURL: ''
     },
     {
         category: 'letters', 
-        imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576494078/resources-letters/C.png', // check this cloudinary
+        imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576494078/resources-letters/C.png', 
         meaning: 'C',
         pictoURL: ''
     },
 
     {
       category: 'letters', 
-      imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576494078/resources-letters/D.png', // check this cloudinary
+      imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576494078/resources-letters/D.png', 
       meaning: 'D',
       pictoURL: ''
   },
 
   {
     category: 'letters', 
-    imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/E.png', // check this cloudinary
+    imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/E.png', 
     meaning: 'E',
     pictoURL: ''
 },
 
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/F.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/F.png', 
   meaning: 'F',
   pictoURL: ''
 },
 
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/G.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/G.png', 
   meaning: 'G',
   pictoURL: ''
 },
 
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/H.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/H.png', 
   meaning: 'H',
   pictoURL: ''
 },
 
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/I.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/I.png', 
   meaning: 'I',
   pictoURL: ''
 },
 
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/J.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/J.png', 
   meaning: 'J',
   pictoURL: ''
 },
 
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/K.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/K.png', 
   meaning: 'K',
   pictoURL: ''
 },
 
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/L.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/L.png', 
   meaning: 'L',
   pictoURL: ''
 },
 
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/M.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/M.png', 
   meaning: 'M',
   pictoURL: ''
 },
 
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/N.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/N.png', 
   meaning: 'N',
   pictoURL: ''
 },
 
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/N.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/N.png', 
   meaning: 'O',
   pictoURL: ''
 },
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/P.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/P.png', 
   meaning: 'P',
   pictoURL: ''
 },
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/Q.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/Q.png', 
   meaning: 'Q',
   pictoURL: ''
 },
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/R.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/R.png', 
   meaning: 'R',
   pictoURL: ''
 },
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/S.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/S.png', 
   meaning: 'S',
   pictoURL: ''
 },
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/T.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/T.png', 
   meaning: 'T',
   pictoURL: ''
 },
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/U.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/U.png', 
   meaning: 'U',
   pictoURL: ''
 },
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/V.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/V.png', 
   meaning: 'V',
   pictoURL: ''
 },
   
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/W.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/W.png', 
   meaning: 'W',
   pictoURL: ''
 },
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/X.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/X.png', 
   meaning: 'X',
   pictoURL: ''
 },
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/Y.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547954/resources-letters/Y.png', 
   meaning: 'Y',
   pictoURL: ''
 },
 {
   category: 'letters', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/Z.png', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576547955/resources-letters/Z.png', 
   meaning: 'Z',
   pictoURL: ''
 },
 {
   category: 'greetings', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576543162/resources-greetings/good-morning.gif', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576543162/resources-greetings/good-morning.gif', 
   meaning: 'Good Morning',
   pictoURL: ''
 },
 {
   category: 'greetings', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576543162/resources-greetings/good-morning.gif', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576543162/resources-greetings/good-morning.gif',  
   meaning: 'Good Morning',
   pictoURL: ''
 },
 {
   category: 'greetings', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576543162/resources-greetings/good-afternoon.gif', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576543162/resources-greetings/good-afternoon.gif', 
   meaning: 'Good Afternoon',
   pictoURL: ''
 },
 {
   category: 'greetings', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576543162/resources-greetings/good-night.gif', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576543162/resources-greetings/good-night.gif', 
   meaning: 'Good Night',
   pictoURL: ''
 },
 {
   category: 'greetings', 
   imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576543162/resources-greetings/hello.gif', 
+  meaning: 'Hello',
   pictoURL: ''
 },
 
 {
   category: 'greetings', 
-  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576543162/resources-greetings/good-bye.gif', // check this cloudinary
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576543162/resources-greetings/good-bye.gif', 
   meaning: 'Goodbye',
   pictoURL: ''
 },
