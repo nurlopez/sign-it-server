@@ -239,9 +239,56 @@ const resourcesSigns = [
   imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576543162/resources-greetings/sorry.gif', 
   meaning: 'Sorry',
   pictoURL: ''
-}
+},
 
-  
+{
+  category: 'transports', 
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576718750/resources-transport/car.gif', 
+  meaning: 'Car',
+  pictoURL: ''
+}, 
+
+{
+  category: 'transports', 
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576718385/resources-transport/moto.gif', 
+  meaning: 'Moto',
+  pictoURL: ''
+}, 
+
+{
+  category: 'transports', 
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576718377/resources-transport/bicycle.gif', 
+  meaning: 'Bicycle',
+  pictoURL: ''
+}, 
+
+{
+  category: 'transports', 
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576718374/resources-transport/aeroplane.gif', 
+  meaning: 'Aeroplane',
+  pictoURL: ''
+}, 
+
+{
+  category: 'transports', 
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576718374/resources-transport/bus.gif', 
+  meaning: 'Bus',
+  pictoURL: ''
+}, 
+
+{
+  category: 'transports', 
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576718374/resources-transport/aeroplane.gif', 
+  meaning: 'Aeroplane',
+  pictoURL: ''
+}, 
+
+{
+  category: 'transports', 
+  imgURL: 'https://res.cloudinary.com/dv6jvxllp/image/upload/v1576718374/resources-transport/metro.gif', 
+  meaning: 'Metro',
+  pictoURL: ''
+}
 
 ]
 
