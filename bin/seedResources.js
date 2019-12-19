@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 // mongoose.connect('mongodb://localhost/mongoose-movies-development');
 require('dotenv').config();
+
 const Resources = require('../models/Resources');
 // require the Picto API
 
