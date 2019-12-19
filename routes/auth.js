@@ -23,7 +23,7 @@ router.get('/profile', isLoggedIn, (req, res, next) => {
 // POST '/profile/edit
 router.put('/profile/:id/edit', async (req, res, next) => {
   const  userId = req.session.currentUser._id;
-  // console.log(userId, 'y ahora?');
+  
   const { username, password } = req.body;
     
 try {
@@ -39,10 +39,10 @@ try {
 
  router.delete('/profile/:id/remove', async (req, res, next) => {
   const  userId = req.session.currentUser._id;
-      // console.log(req.params, '<< I want to delete this one')
+      
 try {
   await User.findByIdAndRemove( userId )
-  // console.log(removedMySign)
+  
   res.status(200).json('User has been deleted!');
 } catch (err) {
   next(err)

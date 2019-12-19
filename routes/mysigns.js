@@ -30,7 +30,7 @@ router.post(
       
       try {
         const sign = await MySigns.create(newMySign)
-        // console.log('added sign', sign)
+        
         res.status(200).json(sign)
       } catch (error) {
         next (error)
@@ -94,10 +94,10 @@ router.post('/create-sign/image', parser.single('photo'), (req, res, next) => {
 
  router.delete('/:id/remove', async (req, res, next) => {
   const  mySignId = req.params.id
-      // console.log(req.params, '<< I want to delete this one')
+
 try {
   await MySigns.findByIdAndRemove( mySignId )
-  // console.log(removedMySign)
+  
   res.status(200).json('Sign-card has been deleted!');
 } catch (err) {
   next(err)
