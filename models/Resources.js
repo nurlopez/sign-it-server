@@ -3,8 +3,8 @@ const Schema = mongoose.Schema;
 
 const resourcesSignsSchema = new Schema(
     {
-        category: {type: String, enum: ["letters", "transports", "greetings", "transport"], required: true}, 
-        imgURL: {type: String, required: true}, // check this cloudinary
+        category: {type: String, enum: ["letters", "transport", "greetings", "transport"], required: true}, 
+        imgURL: {type: String, required: true}, 
         meaning:{type: String, required: true},
         pictoURL: {type: String}
 //       }, {
